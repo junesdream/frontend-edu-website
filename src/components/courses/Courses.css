@@ -1,0 +1,54 @@
+ .single__course__item {
+  padding: 15px;
+}
+
+ .btn {
+background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #F68B1D, 
+      #FCED00,
+      #009E4F,
+      #00AAC3,
+      #732982
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+.course__img img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.enroll a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lesson,
+.students,
+.rating {
+  font-size: 1.1rem;
+  color: #0a2b1e;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.lesson i,
+.students i,
+.rating i {
+  font-weight: 400;
+}
+
+.course__title {
+  line-height: 2rem;
+  color: rgb(89, 101, 214);
+}
+
+.course__top__left h2 {
+  font-weight: 600;
+}

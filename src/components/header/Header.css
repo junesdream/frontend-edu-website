@@ -1,0 +1,110 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 80px;
+   background: rgba(0, 0, 0, .5);
+   /* background: rgba(222, 222, 222, .5); */
+   /* background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  overflow: hidden; */
+
+}
+
+.header .logo h2 {
+   background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text; 
+    padding: 10px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 1.3rem;
+}
+
+.nav__item a {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #0a2b1e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__item a:hover {
+  /* color: #17bf9e; */
+   background: linear-gradient(90deg, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #00f, #2a00ff, #50f, #7f00ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text
+}
+
+.nav__right p {
+  font-weight: 500;
+  color: #0a2b1e;
+  font-size: 1.1rem;
+}
+
+.nav__right p i {
+  font-size: 1.3rem;
+}
+
+.ri-pantone-line{
+    color: #FF007C;
+    font-size: 40px;
+}
+
+
+.mobile__menu span i {
+  font-size: 1.4rem;
+  color: #0a2b1e;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #0a2b1ec2; */
+    background: rgba(0, 0, 0, .5);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav__list {
+    position: absolute;
+    background: #fff;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    padding-top: 80px;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .nav__right {
+    display: none;
+  }
+
+  .active__menu {
+    display: block;
+
+  }
+}

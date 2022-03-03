@@ -1,0 +1,12 @@
+.testimonial__content h2 {
+  font-weight: 600;
+}
+
+.testimonial__content {
+  padding-left: 30px;
+}
+
+.testimonial__content h6 {
+  color: rgb(89, 101, 214);
+}
+
